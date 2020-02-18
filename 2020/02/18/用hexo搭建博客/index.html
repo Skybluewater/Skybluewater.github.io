@@ -1,0 +1,533 @@
+<!DOCTYPE html><html lang="zh-TW"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="preconnect" href="//www.googletagmanager.com">
+	<link rel="preconnect" href="//zz.bdstatic.com">
+	<link rel="preconnect" href="//sp0.baidu.com">
+	<link rel="preconnect" href="//www.google-analytics.com">
+	<link rel="preconnect" href="//cdn1.lncld.net">
+	<link rel="preconnect" href="//unpkg.com">
+	<link rel="preconnect" href="//app-router.leancloud.cn">
+	<link rel="preconnect" href="//9qpuwspm.api.lncld.net">
+	<link rel="preconnect" href="//gravatar.loli.net">
+
+	<title>在Mac上用hexo casper主题搭建博客 | 后窗</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="SkyBlueWater">
+	<meta name="description" content>
+
+	
+	<meta name="keywords" content>
+	
+
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="后窗">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="在Mac上用hexo casper主题搭建博客 | 后窗">
+	<meta property="og:description" content>
+	<meta property="og:url" content="http://Skybluewater.github.io/2020/02/18/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+
+	
+	<meta property="article:published_time" content="2020-02-18T12:02:00+08:00"> 
+	<meta property="article:author" content="SkyBlueWater">
+	<meta property="article:published_first" content="后窗, /2020/02/18/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+	
+
+	
+	
+	
+<link rel="stylesheet" href="/css/allinonecss.min.css">
+
+
+	
+	
+	
+</head>
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header post-site-header outer">
+    <div class="inner">
+        
+<nav class="site-nav"> 
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                
+                <a href="/" title="Home">HOME</a>
+                
+            </li>
+            
+            
+            <li>
+                <a href="/about" title="ABOUT">ABOUT</a>
+            </li>
+            
+            <li>
+                <a href="/archives" title="ARCHIVES">ARCHIVES</a>
+            </li>
+            
+            
+        </ul> 
+    </div>
+    
+    <div class="search-button-area">
+        <a href="#search" class="search-button">Search ...</a>
+    </div>
+     
+    <div class="site-nav-right">
+        
+        <a href="#search" class="search-button">Search ...</a>
+         
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/Skybluewater" target="_blank" rel="noopener">
+        <svg viewBox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    <a class="social-link" title="facebook" href="https://www.facebook.com/profile.php?id=100024103214236&ref=bookmarks" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+    </a>
+    
+    
+    
+    
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<div id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <div class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2020-02-18T04:46:30.000Z">
+                    2020-02-18
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                
+            </div>
+            <h1 class="post-full-title">在Mac上用hexo casper主题搭建博客</h1>
+        </header>
+        <div class="post-full no-image">
+            
+            <div class="post-full-content">
+                <article id="photoswipe" class="markdown-body">
+                    <h1 id="在Mac上用hexo-casper主题搭建博客"><a href="#在Mac上用hexo-casper主题搭建博客" class="headerlink" title="在Mac上用hexo casper主题搭建博客"></a>在Mac上用hexo casper主题搭建博客</h1><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>本文介绍将如何使用hexo和GitHub的个人主页功能搭建博客，系统为Mac系统，hexo主题是casper</p>
+<p><strong>题外话</strong></p>
+<p>说来有趣，从没想过自己会再搞一个博客出来，以为CSDN就够用了，没想到被撺掇起来，15号凌晨弄完了VPS以后抱着极大的兴趣开始搞hexo的事，有这么一段记忆其实挺好玩的。</p>
+<p>hexo搭建的博客更像是一片伊甸园，是只为少数人所知的净土，是一面心灵的后窗。</p>
+<p>后窗源自希区柯克于1954年拍摄的电影，片中格蕾丝凯利饰演女主角，为伊人之美所惊艳，正如片中男主角由于偷窥欲而在无意中发现的惊天秘密一样，在信息爆炸的时代秘密是无法长期保存的，无论一个人的角色大小，只要有一个合适的搜索引擎配以恰当的关键词，我们可以找到一个人从A到Z的每一面，但是也有很多历史在互联网上被隐没，变成一片人人可达而无人达的乐土，任岁月流逝，仍是一片静好。我正希望后窗有如此意义，保存一点我不为人知的秘密，向我喜欢的人敞开心门，做一片心灵的净土。</p>
+<h3 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h3><p>环境上没什么好说的，网上随便一个教程可能都讲的比我恰当详细，但还是不厌其烦的赘述一下，毕竟我在环境配置上可能是浪费最多时间的。</p>
+<h4 id="git和ssh-key"><a href="#git和ssh-key" class="headerlink" title="git和ssh-key"></a>git和ssh-key</h4><p>首先安装一下git，直接使用homebrew即可安装</p>
+<p><code>brew install git</code></p>
+<p>然后生成ssh-key，先看看本地有没有ssh-key</p>
+<p><code>ls -a ~/.ssh/</code></p>
+<p>如果有的话直接</p>
+<p><code>cat ~/.ssh/id_rsa.pub</code></p>
+<p>没有的话</p>
+<p><code>ssh-keygen -t rsa -C "your_email@example.com"</code></p>
+<p>我也忘了我的ssh-key咋弄的，反正刚查网上这么写的，我也就这么信了</p>
+<p>yourexamlpe是注册GitHub的那个邮箱，别弄错</p>
+<p>然后生成并添加ssh-key</p>
+<p><code>ssh-add ~/.ssh/id_rsa</code></p>
+<p>再重复cat的命令就能看到自己的ssh-key了</p>
+<p>接下来把ssh-key添加到GitHub上，打开个人设置</p>
+<p><img alt="hexo1" class="post-img b-lazy" data-img="/Users/cuichengyuan/blog/source/photo/hexo1.png" data-index="0" data-src="/Users/cuichengyuan/blog/source/photo/hexo1.png"></p>
+<p>如上，完成了ssh-key部分的操作</p>
+<h4 id="安装nodejs，坑惨我的大头"><a href="#安装nodejs，坑惨我的大头" class="headerlink" title="安装nodejs，坑惨我的大头"></a>安装nodejs，坑惨我的大头</h4><p>nodejs真不是一好东西，我下了半天下下来zshrc时而能找到nvm时而找不到，第一开始我是直接用brew安装的，brew安装有两个问题，一来是brew实在太慢了，天知道我的brew多久没用过，update一下直接15分钟，不得已替换了brew的update链接，但是依然很慢，而来brew安装的要去.zshrc里改路径配置，直接用curl就没这么多傻事儿，但最坑的是我那天curl刚巧崩了，所有的GitHub链都443 connection refused了，就老老实实brew装半天装了一个残废的nvm出来，但是当时好歹也装上了，装上以后zshrc该改的也改了，hexo也装上了，那会儿已经三点了，我心满意足合上电脑上床睡觉，早上八点起来hexo一下，zsh command not found，WTF？？？？？当场抓狂，重启，curl恢复，遂用curl全部重装，一切正常</p>
+<p><code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash</code></p>
+<p>简而言之上面一行顶brew里千千万万行</p>
+<p>我记得上面那行应该是能在zshrc里自动加路径的，但是以防万一还是cat一下好了，如果没有的话，就在底下加上这么两行</p>
+<p><code>export NVM_DIR="/Users/cuichengyuan/.nvm"</code></p>
+<p><code>[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm</code></p>
+<p>以防万一我刚试了下nvm，还在，嗯，很好</p>
+<p>剩下的是安装node.js</p>
+<p><code>nvm install stable</code></p>
+<p><code>node -v</code>看一下是否安装成功</p>
+<h4 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h4><p>安装hexo还是比较顺利的</p>
+<p><code>npm install -g hexo-cli</code></p>
+<p>然后创建一个博客文件夹，命令<code>hexo init blog</code>即可完成，不一定非得叫blog，我只是照着网上的教程图省事儿用的blog，你要是愿意叫pornhub都没人管你</p>
+<p><code>hexo init 你给博客起的名字</code></p>
+<p>然后进入对应的文件夹（我这里为blog）</p>
+<p><code>cd blog</code></p>
+<p><code>npm install</code></p>
+<p>这个过程稍微等等，可能会报错，无视就好</p>
+<p>hexo的主要配置文件是_config.yml</p>
+<p>这东西很神奇，因为主题也有config.yml，真不知道是咋想的</p>
+<p>如果install好了的话，可以跑一下试试，命令是</p>
+<p><code>hexo s</code></p>
+<p>然后localhost 4000看看可不可以，可以的话就没问题</p>
+<p>hexo里面常用的命令也没多少，hexo generate，生成静态文件，好像是在public文件夹里，hexo s，运行，hexo clean，删除缓存文件，有时候跑不起来clean一下试试，反正我没遇见过clean能解决的，姑且认为有用就行,详细的命令看这个人的，这人总结的很全，但有时候版本不太对，了解一下就行，<a href="https://blog.csdn.net/wsmrzx/article/details/81478103">hexo命令详解</a>。</p>
+<p>然后做点有趣的事儿，改改主题写写文章好了。</p>
+<h3 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h3><h4 id="casper主题安装与配置"><a href="#casper主题安装与配置" class="headerlink" title="casper主题安装与配置"></a>casper主题安装与配置</h4><p>废话王终于把前面的说完了，接下来说说这个主题吧</p>
+<p>这个主题是ghost衍生的一个主题，ghost是一个收费的框架，不建议纯玩的人使用，但是ghost主题很简洁，而且好看，个人觉得next太素了，而且有点呆板，casper的中文介绍页进去就让我眼前一亮，这里也有个小插曲，不过也是后话了</p>
+<p>先把主题搞下来，我觉得比写文章重要，因为这个主题对post_md之类的模版是有一些修改的，就算现在直接搞也不一定能出很好的效果</p>
+<p><a href="https://zhih.me">这里是casper的中文主题介绍页面</a></p>
+<p>首先下载这个主题，在blog文件夹下载casper主题</p>
+<p><code>git clone https://github.com/xzhih/hexo-theme-casper.git themes/hexo-casper</code></p>
+<p>然后把blog的config.yml的theme修改一下</p>
+<p>theme字段应该是hexo的默认主题landscape，改成hexo-casper就好，可以进入./blog/themes的文件夹看看自己都有哪些主题</p>
+<p><code>cd themes/casper</code></p>
+<p><code>git pull</code></p>
+<p>下下来最新的casper主题，不，是作者移植的casper主题</p>
+<p>当然了，<a href="https://github.com/TryGhost/Casper">casper的官方文档在这儿呢</a></p>
+<p>然后进入blog/scaffolds/文件夹，里面有一个post.md文件，casper主题需要对这个文件进行更改</p>
+<figure class="highlight yml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">cover_img:</span>     <span class="comment"># show in home page, the post card header</span></span><br><span class="line"><span class="attr">feature_img:</span>   <span class="comment"># show in post page, content header</span></span><br><span class="line"><span class="attr">description:</span> </span><br><span class="line"><span class="attr">keywords:</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>cover_img是主页里的封面图，feature_img是博文post里的封面图，description和keywords我暂时还没用到，就不瞎扯了</p>
+<p>footer_text可能有点问题，作者的博客有，但是我这里会报错，暂且搁置</p>
+<p>casper支持的widgets比较少，下下来的只有三个，不过也足够了，一个是categories一个是tags cloud一个是recent posts</p>
+<p>第一个可以做about page</p>
+<p><code>hexo new page about</code></p>
+<p>这么着就ok了，自己在source里面填就行了，然后可以看看valine</p>
+<h4 id="valine评论系统和访客人数"><a href="#valine评论系统和访客人数" class="headerlink" title="valine评论系统和访客人数"></a>valine评论系统和访客人数</h4><p>casper是支持valine的，默认的theme config里valine是true，但是valine的访客部分还是有一定修改的</p>
+<p>valine的官方文档在<a href="https://valine.js.org/configuration.html">这里</a></p>
+<p>valine的配置看官方文档就可以了，但是对于casper主题，里面有几个小问题，头像我直接隐藏掉了，花花绿绿的不够好看，但是设置里面有一点很奇怪，正常来说评论的配置（nick mail）是meta（guest_info是老版），但是如果在设置里面直接meta没有反应，这让我很头疼，所以我直接在html里改的，html的话搜<code>valineScript</code>就直接可以改</p>
+<p>这玩意儿我觉得看看应该就会，在此不再详述，同样的访客人数也是一个问题</p>
+<p>访客人数在valine的官方文档里应该可以通过ejs直接添加代码自动加到每一篇post里，但我还真不知道怎么打开ejs这个东西，而且casper里不光是ejs，也有swig等等，所以也就懒得直接改了</p>
+<p><a href="https://valine.js.org/visitor.html">文章阅读量统计</a>valine官方文档</p>
+<p>根据官方文档的提示，我在每一个html里找加入的位置，其实加哪里完全看个人喜好，我觉得加在日期后面比较好看，所以就找日期部分，搜索<code>post-full-meta-date</code>就能找到日期了</p>
+<p>然后在底下按照官方文档的提示增加阅读量的代码，但是lean-cloud visitor count这个class有一个问题，前面会平白无故多一个·出来，这样真的不好看，而且换行上也稍微有点错乱，所以我在分类、日期后面新增加了一个data-divider，把阅读量挪出来，leancloud visitor counts的工作原理是先找id 为leancloud-visitors的东西，然后把对应的url路径输进去，取出它的信息，再填充到<code>leancloud-visitors-count</code>，所以这样弄下来分隔符会到阅读量的后面，也没有了多换行的问题</p>
+<p>如此就能成功的取出阅读量并显示出来，但其实能不能显示还是靠运气的一件事儿，毕竟leancloud有时候不稳定，如果长时间出不来有两种可能，一种是弄错了，一种是leancloud卡了，检查一下网页元素，在资源里面会有leancloud visitor 这个东西，如果显示资源加载错误，可以刷新试试</p>
+<p>这样虽然加载出了阅读量统计，但是每次在deploy以前都需要改index的代码，有点繁琐，但是ejs又懒得开，现阶段先这样将就将就</p>
+<h4 id="题外话"><a href="#题外话" class="headerlink" title="题外话"></a>题外话</h4><p>终于说到题外话了，说实话选这个主题是因为它确实挺好看的，但是它也有一个问题，由于Mac现在有黑暗模式，在黑暗模式和白日模式之间，主题会换，背景颜色啊图片通透度啊字体颜色全都会变，但是由于我不是一个喜欢光明的人（认真），我觉得黑色，深灰色或者蓝色能让我感到心情平静舒畅（蓝色纯粹是个人喜欢，蓝色也得是深蓝色或者暮色蓝），而且让网页简单大气，所以我决定删了那个白天模式尽情的拥抱黑暗</p>
+<p>深色模式是靠查询浏览器实现的，prefers-color-scheme会返回现在的主题配色，然后对应加载不同的网页配置</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> (<span class="attribute">prefers-color-scheme:</span> light) {</span><br><span class="line">	你的...代码</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>所以根据这个提示，我决定找找深色模式究竟在哪，第一开始我锁定了darkmode这个css文件，但是里面修改文件没变化依然会变，但是很重要的提示信息是root，root这个东西可以控制全局的模式，所以现在就找root在哪里就好，打开css的第一个<code>allinonecss.min.css</code>文件，看了一看就恶心了，这玩意儿连换行都不换，让我咋看，一猜就是里面有作者的小秘密，但其他的几个文件打开以后也都不像，陷入困境</p>
+<p>打开Safari看了看每个CSS文件，我顺手往下一拉，竟然在<code>allinonecss.min.css</code>2800行左右看到了root的东西，就在整个文件最下面，毕竟Safari加载这些文件的时候都会编译，整个文件就变得清晰明了起来，可算是找着了，删了root的第一部分，世界变得干净清爽</p>
+<p>还有因为在某些纯文字文章里，背景颜色和文章背景混为一体，不甚美观，所以我决定换一下文章的背景色，但是这玩意儿都在darkmode里面，我又不能实时预览这些颜色，况且你让一个色弱去辨色就跟让一个近视1000度的人穿针一样，所以我用了数码测色计</p>
+<p><img alt="截屏2020-02-1815.39.34" class="post-img b-lazy" data-img="/Users/cuichengyuan/blog/source/photo/%E6%88%AA%E5%B1%8F2020-02-1815.39.34.png" data-index="1" data-src="/Users/cuichengyuan/blog/source/photo/%E6%88%AA%E5%B1%8F2020-02-1815.39.34.png"></p>
+<p>没错就是这个可爱的Mac原生小🔧，然后呢，我用<a href="https://encycolorpedia.com/222222">这个网站</a>挨个像素点测颜色，最后知道了darkmode里这些东西都是对应的哪些颜色，然后改了bg-color发现并不那么好看，故作罢</p>
+<h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>说实话如果第一开始在浅色模式看到主题的显示效果，我绝对不会选这个主题的</p>
+<p>再说句题外话，昨天看美剧看到自己最喜欢的女主角挂了，索性不看了，躺床上想过去半个月发生的事才惊觉时间过的如此之快，自己在家已近半废，但是快开学了，新学期还得加油哇</p>
+
+                </article>
+                <ul class="tags-postTags">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <nav id="gobottom" class="pagination">
+        
+        <span class="prev-next-post">·</span>
+        
+        <a class="next-post" title="一些感想" href="/2020/02/17/%E4%B8%80%E4%BA%9B%E6%84%9F%E6%83%B3/">
+            一些感想 →
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</div>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#在Mac上用hexo-casper主题搭建博客"><span class="toc-text">在Mac上用hexo casper主题搭建博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#环境配置"><span class="toc-text">环境配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#git和ssh-key"><span class="toc-text">git和ssh-key</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装nodejs，坑惨我的大头"><span class="toc-text">安装nodejs，坑惨我的大头</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装hexo"><span class="toc-text">安装hexo</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#搭建博客"><span class="toc-text">搭建博客</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#casper主题安装与配置"><span class="toc-text">casper主题安装与配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#valine评论系统和访客人数"><span class="toc-text">valine评论系统和访客人数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#题外话"><span class="toc-text">题外话</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#后记"><span class="toc-text">后记</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+	</div>
+	
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(https://raw.githubusercontent.com/Skybluewater/Skybluewater.github.io/master/background.jpg)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">— 后窗 —</small>
+    <h3 class="read-next-card-header-title">最新文章</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2020/02/18/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">在Mac上用hexo casper主题搭建博客</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/02/17/%E4%B8%80%E4%BA%9B%E6%84%9F%E6%83%B3/">一些感想</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/02/16/MyFirstPessage/">随笔</a>
+      </li>
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(https://raw.githubusercontent.com/Skybluewater/Skybluewater.github.io/master/background.jpg)">
+    <header class="read-next-card-header tagcloud-card">
+        <h3 class="read-next-card-header-title">分類</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a></li></ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+            
+        </div>
+    </div>
+</aside>
+
+	
+
+
+
+
+<div id="search" class="search-overlay">
+    <div class="search-form">
+        
+        <input id="local-search-input" class="search-input" type="text" name="search" placeholder="搜尋 ...">
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<div class="copyright">
+			<a href="/" title="后窗">后窗 © 2020</a>
+			
+				
+			        <span hidden="true" id="/2020/02/18/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="leancloud-visitors" data-flag-title="在Mac上用hexo casper主题搭建博客">
+			            <span>阅读量 </span>
+			            <span class="leancloud-visitors-count">0</span>
+			        </span>
+	    		
+    		
+		</div>
+		<nav class="site-footer-nav">
+			
+			<a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+			<a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+		</nav>
+	</div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister()
+            }
+        })
+    }
+</script>
+
+
+<script id="scriptLoad" src="/js/allinone.min.js" async></script>
+
+
+<script>
+    document.getElementById('scriptLoad').addEventListener('load', function () {
+        
+        
+            var bLazy = new Blazy();
+        
+
+        
+        
+
+        
+        
+        
+            searchFunc("/");
+        
+        
+    })
+</script>
+
+
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+
+
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+
+
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+
+
+
+<script id="valineScript" src="//unpkg.com/valine/dist/Valine.min.js" async></script>
+<script>
+    document.getElementById('valineScript').addEventListener("load", function() {
+        new Valine({
+            el: '#comment' ,
+            verify: false,
+            notify: false,
+            appId: 'TtwAeAkpGi69bRJcMqy4HXah-gzGzoHsz',
+            appKey: 'V8aPa0UuQPq3QWqIIt8XlA1e',
+            placeholder: 'SayHello',
+            pageSize: 10,
+            avatar: 'hide',
+            visitor: true
+        })
+    });
+</script>
+
+
+
+
+
+
+
+</body></html>
