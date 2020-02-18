@@ -38,12 +38,12 @@
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="在Mac上用hexo casper主题搭建博客 | 后窗">
 	<meta property="og:description" content>
-	<meta property="og:url" content="http://Skybluewater.github.io/2020/02/18/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+	<meta property="og:url" content="http://Skybluewater.github.io/2020/02/18/%E5%9C%A8Mac%E4%B8%8A%E7%94%A8hexo-casper%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
 
 	
 	<meta property="article:published_time" content="2020-02-18T12:02:00+08:00"> 
 	<meta property="article:author" content="SkyBlueWater">
-	<meta property="article:published_first" content="后窗, /2020/02/18/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+	<meta property="article:published_first" content="后窗, /2020/02/18/%E5%9C%A8Mac%E4%B8%8A%E7%94%A8hexo-casper%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
 	
 
 	
@@ -159,7 +159,7 @@
 <p><code>ssh-add ~/.ssh/id_rsa</code></p>
 <p>再重复cat的命令就能看到自己的ssh-key了</p>
 <p>接下来把ssh-key添加到GitHub上，打开个人设置</p>
-<p><img alt="hexo1" class="post-img b-lazy" data-img="/Users/cuichengyuan/blog/source/photo/hexo1.png" data-index="0" data-src="/Users/cuichengyuan/blog/source/photo/hexo1.png"></p>
+<p><img alt="hexo1" class="post-img b-lazy" data-img="./%E5%9C%A8Mac%E4%B8%8A%E7%94%A8hexo-casper%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/hexo1.png" data-index="0" data-src="./%E5%9C%A8Mac%E4%B8%8A%E7%94%A8hexo-casper%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/hexo1.png"></p>
 <p>如上，完成了ssh-key部分的操作</p>
 <h4 id="安装nodejs，坑惨我的大头"><a href="#安装nodejs，坑惨我的大头" class="headerlink" title="安装nodejs，坑惨我的大头"></a>安装nodejs，坑惨我的大头</h4><p>nodejs真不是一好东西，我下了半天下下来zshrc时而能找到nvm时而找不到，第一开始我是直接用brew安装的，brew安装有两个问题，一来是brew实在太慢了，天知道我的brew多久没用过，update一下直接15分钟，不得已替换了brew的update链接，但是依然很慢，而来brew安装的要去.zshrc里改路径配置，直接用curl就没这么多傻事儿，但最坑的是我那天curl刚巧崩了，所有的GitHub链都443 connection refused了，就老老实实brew装半天装了一个残废的nvm出来，但是当时好歹也装上了，装上以后zshrc该改的也改了，hexo也装上了，那会儿已经三点了，我心满意足合上电脑上床睡觉，早上八点起来hexo一下，zsh command not found，WTF？？？？？当场抓狂，重启，curl恢复，遂用curl全部重装，一切正常</p>
 <p><code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash</code></p>
@@ -224,7 +224,8 @@
 <p>所以根据这个提示，我决定找找深色模式究竟在哪，第一开始我锁定了darkmode这个css文件，但是里面修改文件没变化依然会变，但是很重要的提示信息是root，root这个东西可以控制全局的模式，所以现在就找root在哪里就好，打开css的第一个<code>allinonecss.min.css</code>文件，看了一看就恶心了，这玩意儿连换行都不换，让我咋看，一猜就是里面有作者的小秘密，但其他的几个文件打开以后也都不像，陷入困境</p>
 <p>打开Safari看了看每个CSS文件，我顺手往下一拉，竟然在<code>allinonecss.min.css</code>2800行左右看到了root的东西，就在整个文件最下面，毕竟Safari加载这些文件的时候都会编译，整个文件就变得清晰明了起来，可算是找着了，删了root的第一部分，世界变得干净清爽</p>
 <p>还有因为在某些纯文字文章里，背景颜色和文章背景混为一体，不甚美观，所以我决定换一下文章的背景色，但是这玩意儿都在darkmode里面，我又不能实时预览这些颜色，况且你让一个色弱去辨色就跟让一个近视1000度的人穿针一样，所以我用了数码测色计</p>
-<p><img alt="截屏2020-02-1815.39.34" class="post-img b-lazy" data-img="/Users/cuichengyuan/blog/source/photo/%E6%88%AA%E5%B1%8F2020-02-1815.39.34.png" data-index="1" data-src="/Users/cuichengyuan/blog/source/photo/%E6%88%AA%E5%B1%8F2020-02-1815.39.34.png"></p>
+<img alt="截屏2020-02-1815.39.34" style="zoom:50%;" class="post-img b-lazy" data-img="./在Mac上用hexo-casper主题搭建博客/截屏2020-02-1815.39.34.png" data-index="1" data-src="./在Mac上用hexo-casper主题搭建博客/截屏2020-02-1815.39.34.png">
+
 <p>没错就是这个可爱的Mac原生小🔧，然后呢，我用<a href="https://encycolorpedia.com/222222">这个网站</a>挨个像素点测颜色，最后知道了darkmode里这些东西都是对应的哪些颜色，然后改了bg-color发现并不那么好看，故作罢</p>
 <h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>说实话如果第一开始在浅色模式看到主题的显示效果，我绝对不会选这个主题的</p>
 <p>再说句题外话，昨天看美剧看到自己最喜欢的女主角挂了，索性不看了，躺床上想过去半个月发生的事才惊觉时间过的如此之快，自己在家已近半废，但是快开学了，新学期还得加油哇</p>
@@ -240,14 +241,10 @@
     
     <nav id="gobottom" class="pagination">
         
-        <a class="prev-post" title="在Mac上用hexo casper主题搭建博客" href="/2020/02/18/%E5%9C%A8Mac%E4%B8%8A%E7%94%A8hexo-casper%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
-            ← 在Mac上用hexo casper主题搭建博客
-        </a>
-        
         <span class="prev-next-post">·</span>
         
-        <a class="next-post" title="一些感想" href="/2020/02/17/%E4%B8%80%E4%BA%9B%E6%84%9F%E6%83%B3/">
-            一些感想 →
+        <a class="next-post" title="在Mac上用hexo casper主题搭建博客" href="/2020/02/18/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+            在Mac上用hexo casper主题搭建博客 →
         </a>
         
     </nav>
@@ -445,7 +442,7 @@
 			<a href="/" title="后窗">后窗 © 2020</a>
 			
 				
-			        <span hidden="true" id="/2020/02/18/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="leancloud-visitors" data-flag-title="在Mac上用hexo casper主题搭建博客">
+			        <span hidden="true" id="/2020/02/18/%E5%9C%A8Mac%E4%B8%8A%E7%94%A8hexo-casper%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="leancloud-visitors" data-flag-title="在Mac上用hexo casper主题搭建博客">
 			            <span>阅读量 </span>
 			            <span class="leancloud-visitors-count">0</span>
 			        </span>
